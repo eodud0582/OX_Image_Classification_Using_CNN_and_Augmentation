@@ -129,7 +129,7 @@ for i, img_path in enumerate(next_o_pix+next_x_pix):
 plt.show()
 ```
 
-<p align="center"><img src="https://images.velog.io/images/eodud0582/post/08a32c11-c190-4058-b0f2-43c1ee981481/image.png" width="50%" height="50%"></p>
+<p align="center"><img src="https://images.velog.io/images/eodud0582/post/08a32c11-c190-4058-b0f2-43c1ee981481/image.png" width="70%" height="70%"></p>
 
 - 위와 같은 이미지들로 구성 되어 있습니다.
 - 동일한 형태나 크기의 O, X가 아닌 여러 형태와 크기의 O, X 이미지를 사용했습니다.
@@ -270,7 +270,7 @@ model = tf.keras.models.Sequential([
 ])
 model.summary() # 신경망의 구조 확인
 ```
-<p align="center"><img src="https://images.velog.io/images/eodud0582/post/a71b22b0-a995-4388-9a2e-4fbe070dcba6/image.png" width="50%" height="50%"></p>
+<p align="center"><img src="https://images.velog.io/images/eodud0582/post/a71b22b0-a995-4388-9a2e-4fbe070dcba6/image.png" width="70%" height="70%"></p>
 
 ## 모델 학습
 
@@ -357,7 +357,7 @@ plt.legend()
 plt.show()
 ```
 
-<p align="center"><img src="https://images.velog.io/images/eodud0582/post/a5e2c234-8007-4523-80d8-2b9b27de8c4c/image.png" width="50%" height="50%"></p>
+<p align="center"><img src="https://images.velog.io/images/eodud0582/post/a5e2c234-8007-4523-80d8-2b9b27de8c4c/image.png" width="70%" height="70%"></p>
 
 - Training accuracy와 validation accuracy 모두 epoch이 증가하면서 비슷한 수준으로 증가했습니다.
 - 다행히 과적합 되지 않은 것 같습니다.
@@ -406,7 +406,6 @@ for ox, filenames in dic_ox_filenames.items():
             plt.title(fn + " is O")
             plt.axis('off')
             plt.imshow(test_img, cmap='gray')
-
         else:
             plt.title(fn + " is X")
             plt.axis('off')
